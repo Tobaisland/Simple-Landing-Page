@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMTI - Himpunan Teknik Informatika</title>
+</head>
+<body>
+   <h1>Himpunan Mahasiswa Teknik Informatika</h1>
+   <p>HMTI adalah Unit Kegiatan Mahasiswa yang mewadahi minat, bakat, dan kreativitas mahasiswa di bidang teknologi informasi, pemrograman, serta pengembangan soft skill.</p>
+<form method="GET" action="">
+        <input type="text" name="search" placeholder="Cari kegiatan...">
+        <button type="submit">Cari</button>
+    </form>
+
+    <h2>Jadwal Kegiatan Bulan Depan</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <th>Nama Kegiatan</th>
+                <th>Lokasi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12 November 2026</td>
+                <td>Workshop Web Development</td>
+                <td>Lt 4 R.16</td>
+            </tr>
+            <tr>
+                <td>19 November 2026</td>
+                <td>Turnamen E-Sports Antar Kelas</td>
+                <td>Aula Kampus</td>
+            </tr>
+            <tr>
+                <td>26 November 2026</td>
+                <td>Gathering & Tech Talk</td>
+                <td>Lt 4 R.01</td>
+            </tr>
+            <tr>
+                <td colspan="3">Catatan: Jadwal dapat berubah sewaktu-waktu melihat kondisi cuaca atau ketersediaan ruangan.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+<form method="POST" action="">
+        <fieldset>
+            <legend>Formulir Pendaftaran Anggota Baru</legend>
+            
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Kata Sandi:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <label for="divisi">Divisi Minat:</label><br>
+            <select id="divisi" name="divisi" required>
+                <option value="" disabled selected>Pilih Divisi</option>
+                <option value="gaming">Gaming</option>
+                <option value="coding">Coding</option>
+                <option value="traveling">traveling</option>
+            </select><br><br>
+
+            <details>
+                <summary>Keterangan Detail Keanggotaan</summary>
+                <p>Dengan mendaftar sebagai anggota HMTI, Anda wajib mengikuti masa orientasi dasar dan berpartisipasi aktif dalam kegiatan divisi yang telah dipilih.</p>
+            </details><br>
+
+            <input type="checkbox" id="persetujuan" name="persetujuan" required>
+            <label for="persetujuan">Saya menyetujui seluruh syarat dan ketentuan yang berlaku.</label><br><br>
+
+            <button type="submit">Daftar Sekarang</button>
+        </fieldset>
+    </form>
+</body>
+</html>
